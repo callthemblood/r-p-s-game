@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylev1.css">
+    <title>Kurs BroCode</title>
+</head>
+<body>
+
+    <h1>Rock Paper Scissors</h1>
+    
+    <div id="Choices">
+        <button onclick="playGame(`rock`)">🪨</button>
+        <button onclick="playGame(`scissors`)">✂️</button>
+        <button onclick="playGame(`paper`)">📄</button>
+    </div> <br>
+
+    <div id="player">Player: </div>
+    <div id="computer">Computer: </div>
+    <div id="result">Play a game!</div>
+
+    <div class="score">Player score: 
+        <span id="pscoreDisplay"> 0 </span>
+    </div>
+
+    <div class="score">Computer score: 
+        <span id="cscoreDisplay"> 0 </span>
+    </div>
+    <br><button id="resetScore" onclick="reset()">Reset</button>
+
+    <script src="indexv1.js"></script>
+</body>
+</html>
